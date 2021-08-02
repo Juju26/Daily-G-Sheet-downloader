@@ -32,6 +32,9 @@ Requirements :
 3) knowledge on system directories
 
 
+Contributions:
+-------------------------------
+Improvements,comments,contributions are most welcomed
 
 Note:
 -------------------
