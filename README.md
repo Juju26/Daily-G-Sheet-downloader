@@ -13,11 +13,11 @@ So the workers job is to manually copy the balance or the entire sheet before it
 he needs to automate this.Getting google api for excel and processing is not that 
 feasible and way much for him.
 
+
+Output -- Auto Google sheet downloader
 --------------------------------------
- Output -- Auto Google sheet downloader
 
-
-	Features : 
+Features : 
 --------------------------------------
 1)Download the file daily at the specified time without you need to do a single thing
 2)Renames the file in a format (year-month-date hour-minute filename.xslx) 
@@ -32,7 +32,7 @@ Requirements :
 3) knowledge on system directories
 
 
--------------------
+
 Note:
 -------------------
 For educational purpose only!! downloading the file wont work on your system unless 
