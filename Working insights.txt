@@ -1,0 +1,45 @@
+Downloading a file from G-sheets is not big deal but its not that easy to webscrap it and download the same in a .xlsx or .doc format
+
+<!-- I havent scrapped G-sheets as thats against some companies policies --!>
+Ultimate goal is to download a copy of .xlsx thats is openable and not corrupted.
+
+Here is python 'the saviour' for you..
+
+Module 1 : Getting the file url
+I got the edit link to the file (https://docs.google.com/spreadsheets/d/"this is your file key/id"/edit?usp=sharing) 
+   there is a loophole we say or a benifit that 
+   replacing "edit?usp=sharing" with "export?format=xlsx" will instantly download the file (excel in this case)
+  
+ so my module one of the project ends with fetching this url to the browser which will download the file for us in our downloads area.
+ 
+ Note: The link should be in Anyone with the link mode (or) your mail should be in the only person added and your google account signed in at Microsoft edge 
+
+Module 2 : "Moving file and changing file name" 
+
+             ->Here we look for the file in Downloads folder with its name specified(you needs to know the file name and link).
+             ->After finding we are moving the file into folder we want (I placed it in the same file I have my scripts)
+             ->Now attach the timestamps (year-month-date hour-minute filename.xlsx)
+             Result we can see the required file saved in the folder. 
+            
+Module 3 : "Automation ?" 
+           
+           Till this we taught computer to download a file Now we want the computer to do this by itself. 
+           
+           Thanks for Windows Task Scheduler (WTS)
+           
+           "Create .bat file" 
+                    -> create a txt file 
+                    -> "python installation path on your system" "you .py script's path"
+                    -> save the file with .bat extension 
+               
+            Now go to WTS 
+                    ->Create task in right pane
+                    ->Give name for your task 
+                    ->Go to action bar. click new. in program/script add the path of your .bat file 
+                    ->Go to Triggers. click new. select daily and number of days (specify the time) 
+                    -> click ok and you are all set
+                    note:
+                    If you are using in laptop kindly go through conditions tab where there are some checkbox based on charger connected/not 
+                
+                Note: For WTS to run your system should be in running state (not power off/sleep). Yet its not necessary it to be runing in background
+ 
