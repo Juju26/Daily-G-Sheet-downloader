@@ -2,7 +2,7 @@
 Automatically download G-sheets at specified time from web without you actually doing it 
 
 	|||||------ Author: Juju  Dated: 2/8/2021 ------|||||
-------------------
+
 Problem statement:
 -------------------
 consider this scenario 
@@ -16,7 +16,7 @@ feasible and way much for him.
 --------------------------------------
  Output -- Auto Google sheet downloader
 
---------------------------------------
+
 	Features : 
 --------------------------------------
 1)Download the file daily at the specified time without you need to do a single thing
@@ -24,7 +24,7 @@ feasible and way much for him.
    in a seperate folder
 3) Bound to security guideliness using simple python script
 
--------------------
+
 Requirements :
 -------------------
 1) python with suitable modules installed
